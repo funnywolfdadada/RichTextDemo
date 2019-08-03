@@ -10,6 +10,7 @@ import android.text.style.ImageSpan;
 import android.widget.TextView;
 
 import com.example.funnywolf.richtextdemo.fragments.ClickableSpanTestFragment;
+import com.example.funnywolf.richtextdemo.fragments.HtmlTagHandlerFragment;
 import com.example.funnywolf.richtextdemo.fragments.ImageSpanTestFragment;
 import com.example.funnywolf.richtextdemo.spans.BaselineImageSpan;
 import com.example.funnywolf.richtextdemo.spans.CenterImageSpan;
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager()
                 .beginTransaction()
                 //.add(R.id.fragment_content, new ImageSpanTestFragment())
-                .add(R.id.fragment_content, new ClickableSpanTestFragment())
+//                .add(R.id.fragment_content, new ClickableSpanTestFragment())
+                .add(R.id.fragment_content, new HtmlTagHandlerFragment())
                 .commit();
     }
 }
